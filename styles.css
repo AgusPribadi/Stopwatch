@@ -1,0 +1,92 @@
+h1 {
+    text-align: center;
+    color: #343a40;
+    font-weight: 600;
+}
+
+#timer {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.buttons button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+
+.buttons button:first-child {
+    margin-left: 0;
+}
+
+.buttons button:last-child {
+    margin-right: 0;
+}
+
+/* Tampilan untuk layar dengan lebar kurang dari atau sama dengan 576px */
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 15px;
+        margin-top: 0;
+    }
+}
+
+/* Tampilan untuk layar dengan lebar antara 577px dan 992px */
+@media (min-width: 577px) and (max-width: 992px) {
+    .container {
+        max-width: 80%;
+        padding: 20px;
+        margin-top: 0;
+    }
+}
+
+/* Tampilan untuk layar dengan lebar lebih dari 992px */
+@media (min-width: 993px) {
+    .container {
+        max-width: 500px;
+        margin: 0 auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+body {
+    background-color: #f8f9fa;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+    padding: 20px 0;
+}
+
+a {
+    color: #888;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #888;
+}
